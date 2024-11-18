@@ -1,0 +1,28 @@
+The subcommands of `doctl serverless functions` manage your functions namespace, such as listing, reviewing, and invoking your functions.
+
+Usage:
+  doctl serverless functions [command]
+
+Aliases:
+  functions, function, fn
+
+Available Commands:
+  get         Retrieve the metadata or code of a deployed function
+  invoke      Invokes a function
+  list        Lists the functions in your functions namespace
+
+Flags:
+  -h, --help   help for functions
+
+Global Flags:
+  -t, --access-token string   API V2 access token
+  -u, --api-url string        Override default API endpoint
+  -c, --config string         Specify a custom config file (default "/home/intechgiants/.config/doctl/config.yaml")
+      --context string        Specify a custom authentication context name
+      --http-retry-max int    Set maximum number of retries for requests that fail with a 429 or 500-level error (default 5)
+      --interactive           Enable interactive behavior. Defaults to true if the terminal supports it (default false)
+  -o, --output string         Desired output format [text|json] (default "text")
+      --trace                 Show a log of network activity while performing a command
+  -v, --verbose               Enable verbose output
+
+Use "doctl serverless functions [command] --help" for more information about a command.

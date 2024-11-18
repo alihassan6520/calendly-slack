@@ -1,0 +1,23 @@
+targetNamespace: ''
+parameters: {}
+packages:
+  - name: calendly
+    environment:
+      SLACK_WEBHOOK_URL: ${SLACK_WEBHOOK_URL}
+    parameters: {}
+    annotations: {}
+    actions:
+      - name: webhooks
+        runtime: 'python:default'
+        web: raw
+    functions:
+      - name: webhooks
+        binary: false
+        main: ""
+        runtime: python:default
+        web: true
+        webSecure: false
+        parameters: {}
+        environment: {}
+        annotations: {}
+        limits: {}
